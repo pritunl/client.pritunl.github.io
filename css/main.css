@@ -965,6 +965,9 @@ strong {
   padding-top: 30px;
   text-align: center;
 }
+.install .client h2.title {
+  margin-top: 0;
+}
 .install .client img {
   margin-bottom: 10px;
 }
