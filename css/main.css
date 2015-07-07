@@ -1440,6 +1440,17 @@ a.anchor.api-anchor {
   }
 }
 @media (max-width: 767px) {
+  .header .container {
+    padding-right: 80px;
+  }
+  .header h1.logo {
+    max-height: none;
+  }
+  .header .main-nav button {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+  }
   .header .main-nav .nav .nav-item:first-child a {
     padding-left: 6px;
   }
@@ -1505,6 +1516,11 @@ a.anchor.api-anchor {
 @media (max-width: 500px) {
   .screenshots .slider {
     transition: none;
+  }
+}
+@media (max-width: 435px) {
+  .offset-header {
+    padding-top: 120px;
   }
 }
 @media (max-width: 330px) {
