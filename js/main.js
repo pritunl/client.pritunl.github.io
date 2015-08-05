@@ -148,4 +148,18 @@ jQuery(document).ready(function($) {
   }
 
   $('.label').tooltip();
+
+  if ($('#google-cache-hdr').length) {
+    $('.header').css('position', 'absolute')
+  }
+  setTimeout(function() {
+    if ($('#google-cache-hdr').length) {
+      $('.header').css('position', 'absolute')
+    }
+    setTimeout(function() {
+      if ($('#google-cache-hdr').length) {
+        $('.header').css('position', 'absolute')
+      }
+    }, 500);
+  }, 500);
 });
