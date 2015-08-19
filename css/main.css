@@ -970,6 +970,15 @@ strong {
 .client .btn.client-distro {
   opacity: 0.8;
 }
+.client .install-centos-7,
+.client .install-debian-wheezy,
+.client .install-debian-jessie,
+.client .install-ubuntu-precise,
+.client .install-ubuntu-trusty,
+.client .install-ubuntu-vivid,
+.client .install-ubuntu-wily {
+  display: none;
+}
 .install .client {
   padding-top: 30px;
   text-align: center;
