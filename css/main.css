@@ -967,9 +967,6 @@ strong {
   padding-left: 2px;
   padding-right: 2px;
 }
-.client .btn.client-distro {
-  opacity: 0.8;
-}
 .client .install-centos-7,
 .client .install-debian-wheezy,
 .client .install-debian-jessie,
