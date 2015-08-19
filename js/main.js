@@ -76,6 +76,7 @@ jQuery(document).ready(function($) {
 
   $(document).on('dblclick mousedown', '.no-select', false);
 
+  var loaded = ['archlinux'];
   $('.editor').show();
   $('.editor.python').each(function(index, element) {
     var editor = ace.edit(element);
@@ -89,7 +90,7 @@ jQuery(document).ready(function($) {
     $(element).css('height', editor.getSession().getScreenLength() *
       editor.renderer.lineHeight + 2);
   });
-  $('.editor.bash').each(function(index, element) {
+  $('.install-archlinux .editor.bash').each(function(index, element) {
     var editor = ace.edit(element);
     editor.setTheme('ace/theme/tomorrow_night');
     editor.setFontSize(16);
@@ -162,4 +163,67 @@ jQuery(document).ready(function($) {
       }
     }, 500);
   }, 500);
+
+
+  $('.client .client-distro').click(function(evt) {
+    var type;
+    var $target = $(evt.target);
+
+    $('.client-distro').removeClass('btn-primary').addClass('btn-default');
+    $target.removeClass('btn-default').addClass('btn-primary');
+
+    $('.install-archlinux').hide();
+    $('.install-centos-7').hide();
+    $('.install-debian-wheezy').hide();
+    $('.install-debian-jessie').hide();
+    $('.install-ubuntu-precise').hide();
+    $('.install-ubuntu-trusty').hide();
+    $('.install-ubuntu-vivid').hide();
+    $('.install-ubuntu-wily').hide();
+
+    if ($target.hasClass('client-archlinux')) {
+      type = 'archlinux';
+      $('.install-archlinux').show();
+    } else if ($target.hasClass('client-centos-7')) {
+      type = 'centos-7';
+      $('.install-centos-7').show();
+    } else if ($target.hasClass('client-debian-wheezy')) {
+      type = 'debian-wheezy';
+      $('.install-debian-wheezy').show();
+    } else if ($target.hasClass('client-debian-jessie')) {
+      type = 'debian-jessie';
+      $('.install-debian-jessie').show();
+    } else if ($target.hasClass('client-ubuntu-precise')) {
+      type = 'ubuntu-precise';
+      $('.install-ubuntu-precise').show();
+    } else if ($target.hasClass('client-ubuntu-trusty')) {
+      type = 'ubuntu-trusty';
+      $('.install-ubuntu-trusty').show();
+    } else if ($target.hasClass('client-ubuntu-vivid')) {
+      type = 'ubuntu-vivid';
+      $('.install-ubuntu-vivid').show();
+    } else if ($target.hasClass('client-ubuntu-wily')) {
+      type = 'ubuntu-wily';
+      $('.install-ubuntu-wily').show();
+    }
+
+    if (loaded.indexOf(type) === -1) {
+      loaded.push(type);
+      $('.install-' + type + ' .editor.bash').each(function(index, element) {
+        var editor = ace.edit(element);
+        editor.setTheme('ace/theme/tomorrow_night');
+        editor.setFontSize(16);
+        editor.setReadOnly(true);
+        editor.setShowPrintMargin(false);
+        editor.setHighlightActiveLine(false);
+        editor.setShowFoldWidgets(false);
+        editor.renderer.setShowGutter(false);
+        editor.getSession().setMode('ace/mode/sh');
+        $(element).css('height', editor.getSession().getScreenLength() *
+          editor.renderer.lineHeight + 24);
+        $(editor.renderer.scroller).css('margin-top', '10px');
+        $(editor.renderer.scroller).css('margin-left', '10px');
+      });
+    }
+  });
 });
