@@ -607,16 +607,20 @@ strong {
   background-image: url('../img/pritunl_pattern2.svg');
   background-size: 80px;
 }
-.features.feature-simple .btn,
-.features.feature-list .btn {
+.features.feature-simple .btn {
   margin-top: 30px;
   background-color: #3eb4ff;
   color: #fff;
   min-width: 260px;
 }
-.features.feature-simple .btn:hover,
-.features.feature-list .btn:hover {
+.features.feature-simple .btn:hover {
   background-color: #2d93d4;
+}
+.features.feature-list .btn {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+.features.feature-list .btn:hover {
+  background-color: rgba(0, 0, 0, 0.18);
 }
 .features.feature-simple .feature-after {
   opacity: 0;
