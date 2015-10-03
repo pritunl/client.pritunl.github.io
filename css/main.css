@@ -584,6 +584,15 @@ strong {
   font-weight: 300;
   color: #636363;
 }
+.feature-list {
+  background-color: #17354e;
+}
+.feature-list .title {
+  color: #e1e8f3;
+}
+.feature-list .item p {
+  color: #dee5f1;
+}
 .features .item {
   text-align: center;
 }
