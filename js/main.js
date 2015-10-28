@@ -13,14 +13,75 @@ jQuery(document).ready(function($) {
     opacity: 1
   }, .5);
 
+  var $window = $(window);
   var randTheme = 'theme' + Math.floor((Math.random() * 3)).toString();
   var $body = $('body');
   var $promoBg = $('.promo-background-color');
   var $promoImg = $('.promo-background-img');
-  $promoBg.removeClass('theme0');
-  $promoBg.addClass(randTheme);
-  $promoImg.removeClass('theme0');
-  $promoImg.addClass(randTheme);
+  if ($promoBg.length) {
+    $promoBg.removeClass('theme0');
+    $promoBg.addClass(randTheme);
+    $promoImg.removeClass('theme0');
+    $promoImg.addClass(randTheme);
+    var promoBg = $promoBg[0];
+
+    var bgObj;
+    var bgProps;
+    var repeatDelay = .5;
+    if (randTheme === 'theme0') {
+      bgObj = {
+        left: '#3076d5',
+        right: '#1026a1'
+      };
+      bgProps = {
+        left: '#582cc3',
+        right: '#36107f'
+      };
+    } else if (randTheme === 'theme1') {
+      bgObj = {
+        left: '#18212d',
+        right: '#030618'
+      };
+      bgProps = {
+        left: '#2d181b',
+        right: '#180303'
+      };
+    } else if (randTheme === 'theme2') {
+      repeatDelay = 2;
+      bgObj = {
+        left: '#1f0b35',
+        right: '#501d0c'
+      };
+      bgProps = {
+        left: '#501d0c',
+        right: '#1f0b35'
+      };
+    } else if (randTheme === 'theme3') {
+      bgObj = {
+        left: '#900b0b',
+        right: '#1b711c'
+      };
+      bgProps = {
+        left: '#1b711c',
+        right: '#900b0b'
+      };
+    }
+
+    TweenMax.to(bgObj, 6, {
+      delay: 2,
+      repeat: -1,
+      repeatDelay: repeatDelay,
+      yoyo: true,
+      colorProps: bgProps,
+      onUpdate: function() {
+        promoBg.style.background = 'linear-gradient(to right, ' +
+          bgObj.left + ' 0%, ' + bgObj.right + '100%)'
+      }
+    }, .25);
+  }
+
+
+
   var curX;
   var curY;
   $body.mousemove(function(evt) {
