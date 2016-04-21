@@ -8,6 +8,30 @@ body {
   font-style: normal;
   color: #444;
 }
+body.index {
+  background-color: #2d39ae;
+}
+body.api {
+  background-color: #fff;
+}
+body.aws {
+  background-color: #1b073f;
+}
+body.infrastructure {
+  background-color: #3b0011;
+}
+body.platforms {
+  background-color: #251a4c;
+}
+body.terms {
+  background-color: #fff;
+}
+body.security {
+  background-color: #4e0010;
+}
+body.sso {
+  background-color: #660d25;
+}
 a {
   color: #2e4153;
   transition: all 0.4s ease-in-out;
