@@ -15,6 +15,7 @@ jQuery(document).ready(function($) {
 
   var $window = $(window);
   var randTheme = 'theme' + Math.floor((Math.random() * 3)).toString();
+  randTheme = 'theme0';
   var $body = $('body');
   var $promoBg = $('.promo-background-color');
   var $promoImg = $('.promo-background-img');
@@ -199,7 +200,7 @@ jQuery(document).ready(function($) {
   var $navbarCollaspe = $('.navbar-collapse');
   if ($('.promo').length) {
     var onScroll = function() {
-      if ($(this).scrollTop() <= 0) {
+      if ($(this).scrollTop() <= 0 && !$navbarCollaspe.hasClass('in')) {
         $header.addClass('header-top');
       } else if ($header.css('position') !== 'absolute') {
         $header.removeClass('header-top');
