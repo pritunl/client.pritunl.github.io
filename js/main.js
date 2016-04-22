@@ -240,8 +240,8 @@ jQuery(document).ready(function($) {
     $('.install-debian-jessie').hide();
     $('.install-ubuntu-precise').hide();
     $('.install-ubuntu-trusty').hide();
-    $('.install-ubuntu-vivid').hide();
     $('.install-ubuntu-wily').hide();
+    $('.install-ubuntu-xenial').hide();
 
     if ($target.hasClass('client-archlinux')) {
       type = 'archlinux';
@@ -261,12 +261,12 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-ubuntu-trusty')) {
       type = 'ubuntu-trusty';
       $('.install-ubuntu-trusty').show();
-    } else if ($target.hasClass('client-ubuntu-vivid')) {
-      type = 'ubuntu-vivid';
-      $('.install-ubuntu-vivid').show();
     } else if ($target.hasClass('client-ubuntu-wily')) {
       type = 'ubuntu-wily';
       $('.install-ubuntu-wily').show();
+    } else if ($target.hasClass('client-ubuntu-xenial')) {
+      type = 'ubuntu-xenial';
+      $('.install-ubuntu-xenial').show();
     }
 
     if (loaded.indexOf(type) === -1) {

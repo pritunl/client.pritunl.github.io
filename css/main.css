@@ -1015,8 +1015,8 @@ strong {
 .client .install-debian-jessie,
 .client .install-ubuntu-precise,
 .client .install-ubuntu-trusty,
-.client .install-ubuntu-vivid,
-.client .install-ubuntu-wily {
+.client .install-ubuntu-wily,
+.client .install-ubuntu-xenial {
   display: none;
 }
 .install .client {
