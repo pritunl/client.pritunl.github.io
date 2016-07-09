@@ -1,5 +1,5 @@
 name: Pritunl
 markdown: redcarpet
-pygments: true
+highlighting: rouge
 exclude:
   - divshot.json
