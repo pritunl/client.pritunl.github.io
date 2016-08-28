@@ -1230,6 +1230,10 @@ strong {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
+.client-sum {
+  margin: 0 0 7px 0;
+  color: rgba(0, 0, 0, 0.5);
+}
 .contact-us {
   bottom: 0;
   right: 10px;
