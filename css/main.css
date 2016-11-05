@@ -1018,8 +1018,7 @@ strong {
 .client .install-ubuntu-wily,
 .client .install-ubuntu-xenial,
 .client .install-ubuntu-yakkety,
-.client .install-elementary-freya,
-.client .install-elementary-loki {
+.client .install-elementary {
   display: none;
 }
 .install .client {
