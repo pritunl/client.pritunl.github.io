@@ -1016,7 +1016,10 @@ strong {
 .client .install-ubuntu-precise,
 .client .install-ubuntu-trusty,
 .client .install-ubuntu-wily,
-.client .install-ubuntu-xenial {
+.client .install-ubuntu-xenial,
+.client .install-ubuntu-yakkety,
+.client .install-elementary-freya,
+.client .install-elementary-loki {
   display: none;
 }
 .install .client {
