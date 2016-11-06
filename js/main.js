@@ -243,7 +243,7 @@ jQuery(document).ready(function($) {
     $('.install-ubuntu-wily').hide();
     $('.install-ubuntu-xenial').hide();
     $('.install-ubuntu-yakkety').hide();
-    $('.install-elementary').hide();
+    $('.install-other').hide();
 
     if ($target.hasClass('client-archlinux')) {
       type = 'archlinux';
@@ -272,9 +272,9 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-ubuntu-yakkety')) {
       type = 'ubuntu-yakkety';
       $('.install-ubuntu-yakkety').show();
-    } else if ($target.hasClass('client-elementary')) {
-      type = 'elementary';
-      $('.install-elementary').show();
+    } else if ($target.hasClass('client-other')) {
+      type = 'other';
+      $('.install-other').show();
     }
 
     if (loaded.indexOf(type) === -1) {
