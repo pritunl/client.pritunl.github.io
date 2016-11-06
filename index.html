@@ -100,7 +100,7 @@ header_class: header-top
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-archlinux">
           <h3 class="title text-center">Arch Linux</h3>
-          <div class="editor bash">sudo tee -a /etc/pacman.conf << EOF
+          <div class="editor bash">sudo tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
 Server = http://repo.pritunl.com/stable/pacman
 EOF
@@ -112,7 +112,7 @@ sudo pacman -S pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-archlinux">
           <h3 class="title text-center">Arch Linux Server</h3>
-          <div class="editor bash">tee -a /etc/pacman.conf << EOF
+          <div class="editor bash">tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
 Server = http://repo.pritunl.com/stable/pacman
 EOF
@@ -124,7 +124,7 @@ pacman -S pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-centos-7">
           <h3 class="title text-center">CentOS 7</h3>
-          <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo << EOF
+          <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo &lt;&lt; EOF
 [pritunl]
 name=Pritunl Stable Repository
 baseurl=http://repo.pritunl.com/stable/yum/centos/7/
@@ -138,7 +138,7 @@ sudo yum install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-centos-7">
           <h3 class="title text-center">Amazon Linux</h3>
-          <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo << EOF
+          <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo &lt;&lt; EOF
 [pritunl]
 name=Pritunl Stable Repository
 baseurl=http://repo.pritunl.com/stable/yum/centos/7/
@@ -152,7 +152,7 @@ sudo yum install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-debian-jessie">
           <h3 class="title text-center">Debian</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt jessie main
 EOF
 
@@ -162,7 +162,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-debian-jessie">
           <h3 class="title text-center">Debian Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt jessie main
 EOF
 
@@ -172,7 +172,7 @@ sudo apt-get install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-other">
           <h3 class="title text-center">Antergos</h3>
-          <div class="editor bash">sudo tee -a /etc/pacman.conf << EOF
+          <div class="editor bash">sudo tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
 Server = http://repo.pritunl.com/stable/pacman
 EOF
@@ -186,7 +186,7 @@ sudo pacman -S pritunl-client-gtk
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-other">
           <h3 class="title text-center">Elementary Loki</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt xenial main
 EOF
 
@@ -196,7 +196,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
           <h3 class="title text-center">Ubuntu</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt precise main
 EOF
 
@@ -206,7 +206,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
           <h3 class="title text-center">Ubuntu Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt precise main
 EOF
 
@@ -216,7 +216,7 @@ sudo apt-get install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
           <h3 class="title text-center">Ubuntu</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt trusty main
 EOF
 
@@ -226,7 +226,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
           <h3 class="title text-center">Ubuntu Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt trusty main
 EOF
 
@@ -236,7 +236,7 @@ sudo apt-get install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
           <h3 class="title text-center">Ubuntu</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt xenial main
 EOF
 
@@ -246,7 +246,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
           <h3 class="title text-center">Ubuntu Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt xenial main
 EOF
 
@@ -256,7 +256,7 @@ sudo apt-get install pritunl-client</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
           <h3 class="title text-center">Ubuntu</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt yakkety main
 EOF
 
@@ -266,7 +266,7 @@ sudo apt-get install pritunl-client-gtk</div>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
           <h3 class="title text-center">Ubuntu Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt yakkety main
 EOF
 
