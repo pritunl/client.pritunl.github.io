@@ -1,5 +1,5 @@
-name: Pritunl
-markdown: redcarpet
+name: Pritunl Client
+markdown: kramdown
 highlighting: rouge
 exclude:
   - divshot.json
