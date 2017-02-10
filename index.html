@@ -106,7 +106,7 @@ header_class: header-top
           <h3 class="title text-center">Arch Linux</h3>
           <div class="editor bash">sudo tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
-Server = http://repo.pritunl.com/stable/pacman
+Server = https://repo.pritunl.com/stable/pacman
 EOF
 
 sudo pacman-key --keyserver hkp://keyserver.ubuntu.com -r 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -118,7 +118,7 @@ sudo pacman -S pritunl-client-gtk</div>
           <h3 class="title text-center">Arch Linux Server</h3>
           <div class="editor bash">tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
-Server = http://repo.pritunl.com/stable/pacman
+Server = https://repo.pritunl.com/stable/pacman
 EOF
 
 pacman-key --keyserver hkp://keyserver.ubuntu.com -r 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -131,7 +131,7 @@ pacman -S pritunl-client</div>
           <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo &lt;&lt; EOF
 [pritunl]
 name=Pritunl Stable Repository
-baseurl=http://repo.pritunl.com/stable/yum/centos/7/
+baseurl=https://repo.pritunl.com/stable/yum/centos/7/
 gpgcheck=1
 enabled=1
 EOF
@@ -145,7 +145,7 @@ sudo yum install pritunl-client</div>
           <div class="editor bash">sudo tee -a /etc/yum.repos.d/pritunl.repo &lt;&lt; EOF
 [pritunl]
 name=Pritunl Stable Repository
-baseurl=http://repo.pritunl.com/stable/yum/centos/7/
+baseurl=https://repo.pritunl.com/stable/yum/centos/7/
 gpgcheck=1
 enabled=1
 EOF
@@ -157,7 +157,7 @@ sudo yum install pritunl-client</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-debian-jessie">
           <h3 class="title text-center">Debian</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt jessie main
+deb https://repo.pritunl.com/stable/apt jessie main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -167,7 +167,7 @@ sudo apt-get install pritunl-client-gtk</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-debian-jessie">
           <h3 class="title text-center">Debian Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt jessie main
+deb https://repo.pritunl.com/stable/apt jessie main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -178,7 +178,7 @@ sudo apt-get install pritunl-client</div>
           <h3 class="title text-center">Antergos</h3>
           <div class="editor bash">sudo tee -a /etc/pacman.conf &lt;&lt; EOF
 [pritunl]
-Server = http://repo.pritunl.com/stable/pacman
+Server = https://repo.pritunl.com/stable/pacman
 EOF
 
 sudo pacman-key --keyserver hkp://keyserver.ubuntu.com -r 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -191,7 +191,7 @@ sudo pacman -S pritunl-client-gtk
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt precise main
+deb https://repo.pritunl.com/stable/apt precise main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -201,7 +201,7 @@ sudo apt-get install pritunl-client-gtk</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt precise main
+deb https://repo.pritunl.com/stable/apt precise main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -211,7 +211,7 @@ sudo apt-get install pritunl-client</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt trusty main
+deb https://repo.pritunl.com/stable/apt trusty main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -221,7 +221,7 @@ sudo apt-get install pritunl-client-gtk</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt trusty main
+deb https://repo.pritunl.com/stable/apt trusty main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -231,7 +231,7 @@ sudo apt-get install pritunl-client</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt xenial main
+deb https://repo.pritunl.com/stable/apt xenial main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -241,7 +241,7 @@ sudo apt-get install pritunl-client-gtk</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt xenial main
+deb https://repo.pritunl.com/stable/apt xenial main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -251,7 +251,7 @@ sudo apt-get install pritunl-client</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt yakkety main
+deb https://repo.pritunl.com/stable/apt yakkety main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
@@ -261,7 +261,7 @@ sudo apt-get install pritunl-client-gtk</div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt yakkety main
+deb https://repo.pritunl.com/stable/apt yakkety main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
