@@ -1237,9 +1237,16 @@ strong {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
-.client-sum {
+.client-ver {
   margin: 0 0 7px 0;
   color: rgba(0, 0, 0, 0.5);
+}
+.client-sum {
+  margin-bottom: 5px;
+}
+.client-sum,
+.client-download {
+  width: 206px;
 }
 .contact-us {
   bottom: 0;
