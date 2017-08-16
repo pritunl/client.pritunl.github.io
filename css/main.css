@@ -1011,8 +1011,7 @@ strong {
   padding: 0 10px;
 }
 .client .install-centos-7,
-.client .install-debian-wheezy,
-.client .install-debian-jessie,
+.client .install-debian-stretch,
 .client .install-ubuntu-precise,
 .client .install-ubuntu-trusty,
 .client .install-ubuntu-wily,
