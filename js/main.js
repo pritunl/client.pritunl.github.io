@@ -236,8 +236,7 @@ jQuery(document).ready(function($) {
 
     $('.install-archlinux').hide();
     $('.install-centos-7').hide();
-    $('.install-debian-wheezy').hide();
-    $('.install-debian-jessie').hide();
+    $('.install-debian-stretch').hide();
     $('.install-ubuntu-precise').hide();
     $('.install-ubuntu-trusty').hide();
     $('.install-ubuntu-wily').hide();
@@ -251,12 +250,9 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-centos-7')) {
       type = 'centos-7';
       $('.install-centos-7').show();
-    } else if ($target.hasClass('client-debian-wheezy')) {
-      type = 'debian-wheezy';
-      $('.install-debian-wheezy').show();
-    } else if ($target.hasClass('client-debian-jessie')) {
-      type = 'debian-jessie';
-      $('.install-debian-jessie').show();
+    } else if ($target.hasClass('client-debian-stretch')) {
+      type = 'debian-stretch';
+      $('.install-debian-stretch').show();
     } else if ($target.hasClass('client-ubuntu-precise')) {
       type = 'ubuntu-precise';
       $('.install-ubuntu-precise').show();
