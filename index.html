@@ -96,7 +96,7 @@ header_class: header-top
       <div class="row client">
         <h2 class="title text-center">Install</h2>
         <div class="distro-btns item col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-          <button class="client-distro client-archlinux btn btn-lg btn-primary">Arch Linux</button><button class="client-distro client-centos-7 btn btn-lg btn-default">CentOS 7</button><button class="client-distro client-debian-stretch btn btn-lg btn-default">Debian 9</button><button class="client-distro client-other btn btn-lg btn-default">Antergos</button><button class="client-distro client-ubuntu-precise btn btn-lg btn-default">Ubuntu 12.04</button><button class="client-distro client-ubuntu-trusty btn btn-lg btn-default">Ubuntu 14.04</button><button class="client-distro client-ubuntu-xenial btn btn-lg btn-default">Ubuntu 16.04</button><button class="client-distro client-ubuntu-yakkety btn btn-lg btn-default">Ubuntu 16.10</button>
+          <button class="client-distro client-archlinux btn btn-lg btn-primary">Arch Linux</button><button class="client-distro client-centos-7 btn btn-lg btn-default">CentOS 7</button><button class="client-distro client-debian-stretch btn btn-lg btn-default">Debian 9</button><button class="client-distro client-other btn btn-lg btn-default">Antergos</button><button class="client-distro client-ubuntu-one btn btn-lg btn-default">Ubuntu 14.04</button><button class="client-distro client-ubuntu-two btn btn-lg btn-default">Ubuntu 16.04</button><button class="client-distro client-ubuntu-three btn btn-lg btn-default">Ubuntu 17.04</button><button class="client-distro client-ubuntu-four btn btn-lg btn-default">Ubuntu 17.10</button>
         </div>
         <div class="item col-md-6 col-sm-12 col-xs-12 install-archlinux">
           <h3 class="title text-center">Arch Linux</h3>
@@ -186,27 +186,7 @@ sudo pacman -S pritunl-client-gtk
 
 # tray icon is shown in bottom left</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
-          <h3 class="title text-center">Ubuntu</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt precise main
-EOF
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client-gtk</div>
-        </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-precise">
-          <h3 class="title text-center">Ubuntu Server</h3>
-          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt precise main
-EOF
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client</div>
-        </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-one">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt trusty main
@@ -216,7 +196,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get install pritunl-client-gtk</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-trusty">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-one">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt trusty main
@@ -226,7 +206,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get install pritunl-client</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-two">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt xenial main
@@ -236,7 +216,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get install pritunl-client-gtk</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-xenial">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-two">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb http://repo.pritunl.com/stable/apt xenial main
@@ -246,20 +226,40 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E528
 sudo apt-get update
 sudo apt-get install pritunl-client</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-three">
           <h3 class="title text-center">Ubuntu</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt yakkety main
+deb http://repo.pritunl.com/stable/apt zesty main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 sudo apt-get update
 sudo apt-get install pritunl-client-gtk</div>
         </div>
-        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-yakkety">
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-three">
           <h3 class="title text-center">Ubuntu Server</h3>
           <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
-deb http://repo.pritunl.com/stable/apt yakkety main
+deb http://repo.pritunl.com/stable/apt zesty main
+EOF
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+sudo apt-get update
+sudo apt-get install pritunl-client</div>
+        </div>
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-four">
+          <h3 class="title text-center">Ubuntu</h3>
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
+deb http://repo.pritunl.com/stable/apt artful main
+EOF
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+sudo apt-get update
+sudo apt-get install pritunl-client-gtk</div>
+        </div>
+        <div class="item col-md-6 col-sm-12 col-xs-12 install-ubuntu-four">
+          <h3 class="title text-center">Ubuntu Server</h3>
+          <div class="editor bash">sudo tee -a /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
+deb http://repo.pritunl.com/stable/apt artful main
 EOF
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A

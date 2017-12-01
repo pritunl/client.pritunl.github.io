@@ -237,11 +237,10 @@ jQuery(document).ready(function($) {
     $('.install-archlinux').hide();
     $('.install-centos-7').hide();
     $('.install-debian-stretch').hide();
-    $('.install-ubuntu-precise').hide();
-    $('.install-ubuntu-trusty').hide();
-    $('.install-ubuntu-wily').hide();
-    $('.install-ubuntu-xenial').hide();
-    $('.install-ubuntu-yakkety').hide();
+    $('.install-ubuntu-one').hide();
+    $('.install-ubuntu-two').hide();
+    $('.install-ubuntu-three').hide();
+    $('.install-ubuntu-four').hide();
     $('.install-other').hide();
 
     if ($target.hasClass('client-archlinux')) {
@@ -253,21 +252,18 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-debian-stretch')) {
       type = 'debian-stretch';
       $('.install-debian-stretch').show();
-    } else if ($target.hasClass('client-ubuntu-precise')) {
-      type = 'ubuntu-precise';
-      $('.install-ubuntu-precise').show();
-    } else if ($target.hasClass('client-ubuntu-trusty')) {
-      type = 'ubuntu-trusty';
-      $('.install-ubuntu-trusty').show();
-    } else if ($target.hasClass('client-ubuntu-wily')) {
-      type = 'ubuntu-wily';
-      $('.install-ubuntu-wily').show();
-    } else if ($target.hasClass('client-ubuntu-xenial')) {
-      type = 'ubuntu-xenial';
-      $('.install-ubuntu-xenial').show();
-    } else if ($target.hasClass('client-ubuntu-yakkety')) {
-      type = 'ubuntu-yakkety';
-      $('.install-ubuntu-yakkety').show();
+    } else if ($target.hasClass('client-ubuntu-one')) {
+      type = 'ubuntu-one';
+      $('.install-ubuntu-one').show();
+    } else if ($target.hasClass('client-ubuntu-two')) {
+      type = 'ubuntu-two';
+      $('.install-ubuntu-two').show();
+    } else if ($target.hasClass('client-ubuntu-three')) {
+      type = 'ubuntu-three';
+      $('.install-ubuntu-three').show();
+    } else if ($target.hasClass('client-ubuntu-four')) {
+      type = 'ubuntu-four';
+      $('.install-ubuntu-four').show();
     } else if ($target.hasClass('client-other')) {
       type = 'other';
       $('.install-other').show();

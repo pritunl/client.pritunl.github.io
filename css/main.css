@@ -1012,11 +1012,10 @@ strong {
 }
 .client .install-centos-7,
 .client .install-debian-stretch,
-.client .install-ubuntu-precise,
-.client .install-ubuntu-trusty,
-.client .install-ubuntu-wily,
-.client .install-ubuntu-xenial,
-.client .install-ubuntu-yakkety,
+.client .install-ubuntu-one,
+.client .install-ubuntu-two,
+.client .install-ubuntu-three,
+.client .install-ubuntu-four,
 .client .install-other {
   display: none;
 }
