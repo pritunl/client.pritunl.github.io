@@ -237,7 +237,7 @@ jQuery(document).ready(function($) {
     $('.install-archlinux').hide();
     $('.install-centos-7').hide();
     $('.install-debian-stretch').hide();
-    $('.install-ubuntu-one').hide();
+    $('.install-fedora').hide();
     $('.install-ubuntu-two').hide();
     $('.install-ubuntu-three').hide();
     $('.install-ubuntu-four').hide();
@@ -252,9 +252,9 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-debian-stretch')) {
       type = 'debian-stretch';
       $('.install-debian-stretch').show();
-    } else if ($target.hasClass('client-ubuntu-one')) {
-      type = 'ubuntu-one';
-      $('.install-ubuntu-one').show();
+    } else if ($target.hasClass('client-fedora')) {
+      type = 'fedora';
+      $('.install-fedora').show();
     } else if ($target.hasClass('client-ubuntu-two')) {
       type = 'ubuntu-two';
       $('.install-ubuntu-two').show();
