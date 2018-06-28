@@ -1239,12 +1239,13 @@ strong {
   width: 100%;
   display: none;
 }
-.ace_scrollbar {
-  display: none !important;
-}
-.ace_scroller {
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+.item .CodeMirror {
+  font-size: 12px;
+  width: 100%;
+  max-width: 570px;
+  margin: 5px auto;
+  text-align: left;
+  height: auto;
 }
 .client-ver {
   margin: 0 0 7px 0;

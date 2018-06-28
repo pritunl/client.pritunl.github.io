@@ -99,23 +99,6 @@ jQuery(document).ready(function($) {
       'matrix(1.05, 0, 0, 1.05, ' + x + ', ' + y + ')');
   });
 
-  $('a.scrollto').on('click', function(evt){
-    var target = this.hash;
-    if (!$(target).length) {
-      return;
-    }
-
-    evt.preventDefault();
-    $body.stop(true);
-    $body.scrollTo(target, 800, {}, {easing: 'easeOutQuad'});
-
-    var $navbarCollapse = $('.navbar-collapse');
-
-    if ($navbarCollapse.hasClass('in')) {
-      $navbarCollapse.removeClass('in').addClass('collapse');
-    }
-	});
-
   $('.navbar-toggle').on('click', function(evt) {
     var scrollTop = $(window).scrollTop();
     if ($('.navbar-collapse').hasClass('in') &&
@@ -139,33 +122,23 @@ jQuery(document).ready(function($) {
   $(document).on('dblclick mousedown', '.no-select', false);
 
   var loaded = ['archlinux'];
-  $('.editor').show();
   $('.editor.python').each(function(index, element) {
-    var editor = ace.edit(element);
-    editor.setTheme('ace/theme/tomorrow_night');
-    editor.setReadOnly(true);
-    editor.setShowPrintMargin(false);
-    editor.setHighlightActiveLine(false);
-    editor.setHighlightGutterLine(false);
-    editor.setShowFoldWidgets(false);
-    editor.getSession().setMode('ace/mode/python');
-    $(element).css('height', editor.getSession().getScreenLength() *
-      editor.renderer.lineHeight + 2);
+    CodeMirror.fromTextArea(element, {
+      mode: 'python',
+      theme: 'material',
+      lineNumbers: true,
+      lineWrapping: true,
+      readOnly: true
+    });
   });
   $('.install-archlinux .editor.bash').each(function(index, element) {
-    var editor = ace.edit(element);
-    editor.setTheme('ace/theme/tomorrow_night');
-    editor.setFontSize(16);
-    editor.setReadOnly(true);
-    editor.setShowPrintMargin(false);
-    editor.setHighlightActiveLine(false);
-    editor.setShowFoldWidgets(false);
-    editor.renderer.setShowGutter(false);
-    editor.getSession().setMode('ace/mode/sh');
-    $(element).css('height', editor.getSession().getScreenLength() *
-      editor.renderer.lineHeight + 24);
-    $(editor.renderer.scroller).css('margin-top', '10px');
-    $(editor.renderer.scroller).css('margin-left', '10px');
+    CodeMirror.fromTextArea(element, {
+      mode: 'shell',
+      theme: 'material',
+      lineNumbers: true,
+      lineWrapping: true,
+      readOnly: true
+    });
   });
 
   (function() {
@@ -271,20 +244,14 @@ jQuery(document).ready(function($) {
 
     if (loaded.indexOf(type) === -1) {
       loaded.push(type);
-      $('.install-' + type + ' .editor.bash').each(function(index, element) {
-        var editor = ace.edit(element);
-        editor.setTheme('ace/theme/tomorrow_night');
-        editor.setFontSize(16);
-        editor.setReadOnly(true);
-        editor.setShowPrintMargin(false);
-        editor.setHighlightActiveLine(false);
-        editor.setShowFoldWidgets(false);
-        editor.renderer.setShowGutter(false);
-        editor.getSession().setMode('ace/mode/sh');
-        $(element).css('height', editor.getSession().getScreenLength() *
-          editor.renderer.lineHeight + 24);
-        $(editor.renderer.scroller).css('margin-top', '10px');
-        $(editor.renderer.scroller).css('margin-left', '10px');
+      $('.client .install-' + type + ' .editor.bash').each(function(index, element) {
+        CodeMirror.fromTextArea(element, {
+          mode: 'shell',
+          theme: 'material',
+          lineNumbers: true,
+          lineWrapping: true,
+          readOnly: true
+        });
       });
     }
   });
