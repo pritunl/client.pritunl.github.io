@@ -144,10 +144,10 @@ sudo yum install pritunl-client-electron</textarea>
 deb https://repo.pritunl.com/stable/apt buster main
 EOF
 
-sudo apt-get install dirmngr
+sudo apt install dirmngr
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client-electron</textarea>
+sudo apt update
+sudo apt install pritunl-client-electron</textarea>
         </div>
         <div class="item col-md-10 col-sm-12 col-xs-12 col-md-offset-1 install-other">
           <h3 class="title text-center">Oracle Linux 8</h3>
@@ -183,9 +183,11 @@ sudo dnf install pritunl-client-electron</textarea>
 deb https://repo.pritunl.com/stable/apt bionic main
 EOF
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client-electron</textarea>
+sudo apt --assume-yes install gnupg
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /etc/apt/trusted.gpg.d/pritunl.asc
+sudo apt update
+sudo apt install pritunl-client-electron</textarea>
         </div>
         <div class="item col-md-10 col-sm-12 col-xs-12 col-md-offset-1 install-ubuntu-three">
           <h3 class="title text-center">Ubuntu Focal</h3>
@@ -193,9 +195,11 @@ sudo apt-get install pritunl-client-electron</textarea>
 deb https://repo.pritunl.com/stable/apt focal main
 EOF
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client-electron</textarea>
+sudo apt --assume-yes install gnupg
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /etc/apt/trusted.gpg.d/pritunl.asc
+sudo apt update
+sudo apt install pritunl-client-electron</textarea>
         </div>
         <div class="item col-md-10 col-sm-12 col-xs-12 col-md-offset-1 install-ubuntu-four">
           <h3 class="title text-center">Ubuntu Jammy</h3>
@@ -203,9 +207,11 @@ sudo apt-get install pritunl-client-electron</textarea>
 deb https://repo.pritunl.com/stable/apt jammy main
 EOF
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get install pritunl-client-electron</textarea>
+sudo apt --assume-yes install gnupg
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /etc/apt/trusted.gpg.d/pritunl.asc
+sudo apt update
+sudo apt install pritunl-client-electron</textarea>
         </div>
       </div>
       <div class="row client">
