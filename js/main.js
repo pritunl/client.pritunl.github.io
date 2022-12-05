@@ -211,9 +211,9 @@ jQuery(document).ready(function($) {
     $('.install-centos-7').hide();
     $('.install-debian-stretch').hide();
     $('.install-fedora').hide();
+    $('.install-ubuntu-one').hide();
     $('.install-ubuntu-two').hide();
     $('.install-ubuntu-three').hide();
-    $('.install-ubuntu-four').hide();
     $('.install-other').hide();
 
     if ($target.hasClass('client-archlinux')) {
@@ -228,15 +228,15 @@ jQuery(document).ready(function($) {
     } else if ($target.hasClass('client-fedora')) {
       type = 'fedora';
       $('.install-fedora').show();
+    } else if ($target.hasClass('client-ubuntu-one')) {
+      type = 'ubuntu-one';
+      $('.install-ubuntu-one').show();
     } else if ($target.hasClass('client-ubuntu-two')) {
       type = 'ubuntu-two';
       $('.install-ubuntu-two').show();
     } else if ($target.hasClass('client-ubuntu-three')) {
       type = 'ubuntu-three';
       $('.install-ubuntu-three').show();
-    } else if ($target.hasClass('client-ubuntu-four')) {
-      type = 'ubuntu-four';
-      $('.install-ubuntu-four').show();
     } else if ($target.hasClass('client-other')) {
       type = 'other';
       $('.install-other').show();
