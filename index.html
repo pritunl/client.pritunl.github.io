@@ -126,14 +126,12 @@ sudo yum install pritunl-client-electron</textarea>
         </div>
         <div class="item col-md-10 col-sm-12 col-xs-12 col-md-offset-1 install-debian-stretch">
           <h3 class="title text-center">Debian 13</h3>
-          <textarea class="editor bash">sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
+          <textarea class="editor bash">sudo tee /etc/apt/sources.list.d/pritunl.list &lt;&lt; EOF
 deb [signed-by=/usr/share/keyrings/pritunl.gpg] https://repo.pritunl.com/stable/apt trixie main
 EOF
 
-sudo apt update && sudo apt install -y gnupg
-gpg --no-default-keyring --keyring ./temp-keyring.gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-gpg --no-default-keyring --keyring ./temp-keyring.gpg --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /usr/share/keyrings/pritunl.gpg > /dev/null
-rm ./temp-keyring.gpg
+sudo gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+sudo gpg --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /usr/share/keyrings/pritunl.gpg > /dev/null
 
 sudo apt update
 sudo apt install pritunl-client-electron</textarea>
