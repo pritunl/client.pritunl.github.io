@@ -130,8 +130,8 @@ sudo yum install pritunl-client-electron</textarea>
 deb [signed-by=/usr/share/keyrings/pritunl.gpg] https://repo.pritunl.com/stable/apt trixie main
 EOF
 
-sudo gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo gpg --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A | sudo tee /usr/share/keyrings/pritunl.gpg > /dev/null
+sudo apt --assume-yes install gnupg
+curl -fsSL https://raw.githubusercontent.com/pritunl/pgp/master/pritunl_repo_pub.asc | sudo gpg -o /usr/share/keyrings/pritunl.gpg --dearmor --yes
 
 sudo apt update
 sudo apt install pritunl-client-electron</textarea>
